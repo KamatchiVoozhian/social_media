@@ -4,25 +4,15 @@ function Navbar() {
   let floatRight = {
     float: 'right'
   }
-  let image = {
-    width: '60px',
-    height: '50px',
-    float: 'left',
-    background: 'black'
-   
-  }
   let buttonStyles = {
     padding: '10px 10px 10px 10px',
     backgroundColor: 'white',
-    width: '100px'  ,
-    alignItems: 'center'}
-
+    width: '100px'  }
   let searchbarStyles = {
     height: '30px',
     marginRight: '40px',
     paddingLeft: '15px',
-    width: '200px',
-    align: 'center'
+    width: '200px'
   }
   let borderRadius = {
     borderRadius: '15px 15px 15px 15px',
@@ -34,7 +24,7 @@ function Navbar() {
     let formData = new FormData();           
     formData.append("content", fileupload.files[0]);
     console.log(formData);
-    await fetch('https://socialmediaapplication.appprogint.workers.dev/posts', {
+    await fetch('https://myapp.appprogint.workers.dev/posts', {
       method: "POST", 
       body: formData
     });    
@@ -45,14 +35,13 @@ function Navbar() {
   return (
     <div>
       <nav>
-      <img style={image} src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZ4QAkqXMi8_4FErcg9ZA4hPuvIrsoFrlpHQ&usqp=CAU"/>
-      
+      <input id="fileupload" type="file" name="fileupload" />
         <button style={buttonStyles} onClick={post}>POST</button>
         <button style={buttonStyles}>Notifications</button>
         <button style={buttonStyles}>Messages</button>
         <div style={floatRight}>
           <input style={Object.assign({}, searchbarStyles, borderRadius)} type="text" placeholder="Search"/>
-          <button style={Object.assign({}, buttonStyles, borderRadius)}>Account</button>
+          <button style={Object.assign({}, buttonStyles, borderRadius)}>Something</button>
         </div>
       </nav>
       <hr/>

@@ -12,13 +12,11 @@ function App() {
     gridTemplateColumns: 'repeat(3, 1fr)',
     marginLeft: '350px',
     marginRight: '50px',
-    background: 'black'
    }
  
   
   return (
     <div>
-       <style>{'body { background-color: black; }'}</style>
       <Navbar/>
       <div style={columns}>
         <div>

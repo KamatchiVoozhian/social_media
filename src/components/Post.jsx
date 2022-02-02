@@ -8,20 +8,16 @@ function Post(props) {
     float: 'left',
     alignItems: 'center',
     padding: '50px 180px 100px 100px',
-    background: 'black'
+    alignItems: 'center',
    
   }
   let text = {
     paddingLeft: '1px',
-    marginTop: '130%',
-    color: 'white',
-    marginBottom: 'auto',
-    marginLeft:'auto'
-    
+    marginTop: '130%'
 
   }
   let border={
-    border: '1px solid black',
+    border: '1px solid #34abef',
     display: 'grid',
     gridTemplateColumns: '1fr 4fr',
     width: '200%',
@@ -30,8 +26,8 @@ function Post(props) {
   }
   let name={
     marginLeft: '5%',
-    marginTop: '5%',
-    color: 'cyan'
+    marginTop: '5%'
+    
   }
 
   return (
