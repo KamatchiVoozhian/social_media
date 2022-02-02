@@ -4,15 +4,25 @@ function Navbar() {
   let floatRight = {
     float: 'right'
   }
+  let image = {
+    width: '60px',
+    height: '50px',
+    float: 'left',
+    background: 'black'
+   
+  }
   let buttonStyles = {
     padding: '10px 10px 10px 10px',
     backgroundColor: 'white',
-    width: '100px'  }
+    width: '100px'  ,
+    alignItems: 'center'}
+
   let searchbarStyles = {
     height: '30px',
     marginRight: '40px',
     paddingLeft: '15px',
-    width: '200px'
+    width: '200px',
+    align: 'center'
   }
   let borderRadius = {
     borderRadius: '15px 15px 15px 15px',
@@ -35,13 +45,14 @@ function Navbar() {
   return (
     <div>
       <nav>
-      <input id="fileupload" type="file" name="fileupload" />
+      <img style={image} src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZ4QAkqXMi8_4FErcg9ZA4hPuvIrsoFrlpHQ&usqp=CAU"/>
+      
         <button style={buttonStyles} onClick={post}>POST</button>
         <button style={buttonStyles}>Notifications</button>
         <button style={buttonStyles}>Messages</button>
         <div style={floatRight}>
           <input style={Object.assign({}, searchbarStyles, borderRadius)} type="text" placeholder="Search"/>
-          <button style={Object.assign({}, buttonStyles, borderRadius)}>Something</button>
+          <button style={Object.assign({}, buttonStyles, borderRadius)}>Account</button>
         </div>
       </nav>
       <hr/>

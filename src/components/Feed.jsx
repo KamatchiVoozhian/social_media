@@ -7,7 +7,7 @@ function Feed() {
   let container = {
     width: '100%',
     height: '50%' ,
-
+    background: 'black'
   }
  
   
