@@ -1,5 +1,5 @@
 import React from 'react';
-
+import Bio from './Bio';
 function Navbar() {
   let floatRight = {
     float: 'right'
@@ -18,10 +18,25 @@ function Navbar() {
     borderRadius: '15px 15px 15px 15px',
     border: '2px solid #34abef'
   }
+
+  async function post() {
+  
+    let formData = new FormData();           
+    formData.append("content", fileupload.files[0]);
+    console.log(formData);
+    await fetch('https://myapp.appprogint.workers.dev/posts', {
+      method: "POST", 
+      body: formData
+    });    
+    alert('The file has been uploaded successfully.');
+    //window.open("http://www.your-site.com/images/picture.jpg", "Window Title", "width=700, height=750");
+  }
+
   return (
     <div>
       <nav>
-        <button style={buttonStyles}>POST</button>
+      <input id="fileupload" type="file" name="fileupload" />
+        <button style={buttonStyles} onClick={post}>POST</button>
         <button style={buttonStyles}>Notifications</button>
         <button style={buttonStyles}>Messages</button>
         <div style={floatRight}>

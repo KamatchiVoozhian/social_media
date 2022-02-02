@@ -1,9 +1,10 @@
 import React from "react";
 import Navbar from './Navbar';
-import Badge from './Badge';
 import Bio from './Bio';
 import Feed from './Feed'
-import FriendList from './FriendList';
+
+import MyComponent from "./MyComponent";
+
 
 function App() {
   let columns = {
@@ -11,7 +12,9 @@ function App() {
     gridTemplateColumns: 'repeat(3, 1fr)',
     marginLeft: '350px',
     marginRight: '50px',
-  }
+   }
+ 
+  
   return (
     <div>
       <Navbar/>
@@ -19,6 +22,9 @@ function App() {
         <div>
           <Feed/>
         </div> 
+      </div>
+      <div>
+      <MyComponent/>
       </div>
     </div>
   );

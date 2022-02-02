@@ -4,14 +4,17 @@ import PropTypes from 'prop-types';
 function Post(props) {
   let image = {
     width: '200%',
-    height: 'auto',
+    height: '80%',
     float: 'left',
+    alignItems: 'center',
     padding: '50px 180px 100px 100px',
+    alignItems: 'center',
    
   }
   let text = {
     paddingLeft: '1px',
     marginTop: '130%'
+
   }
   let border={
     border: '1px solid #34abef',
@@ -26,6 +29,7 @@ function Post(props) {
     marginTop: '5%'
     
   }
+
   return (
     <div style={border}>
       <img style={image} src={props.img}/>

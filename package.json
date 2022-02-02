@@ -1,20 +1,24 @@
 {
-  "name": "social-media-clone",
+  "name": "social-media-application",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "webpack-dev-server"
+    "start": "webpack-dev-server",
+    "build": "echo 'build script executed'"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "axios": "^0.25.0",
     "bootstrap": "^4.3.1",
+    "emoji-picker-react": "^3.5.0",
     "prop-types": "^15.5.10",
-    "react": "^15.5.4",
+    "react": "^15.7.0",
     "react-bootstrap": "^1.0.0-beta.8",
-    "react-dom": "^15.5.4"
+    "react-dom": "^15.7.0",
+    "react-router-dom": "^6.2.1"
   },
   "devDependencies": {
     "babel-core": "^6.24.1",
