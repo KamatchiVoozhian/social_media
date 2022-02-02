@@ -24,7 +24,7 @@ function Navbar() {
     let formData = new FormData();           
     formData.append("content", fileupload.files[0]);
     console.log(formData);
-    await fetch('https://myapp.appprogint.workers.dev/posts', {
+    await fetch('https://socialmediaapplication.appprogint.workers.dev/posts', {
       method: "POST", 
       body: formData
     });    
